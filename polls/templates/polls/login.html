@@ -1,0 +1,71 @@
+{% extends 'polls/base.html' %}
+{% load static %}
+{% block style %}
+       <link rel="stylesheet" type="text/css" href="{% static 'css/tabbular.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.circliful.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/owl-carousel/owl.theme.css' %}">
+    
+{% endblock %}
+
+{% block content %}
+  <!-- Container Start -->
+    <div class="container">
+
+        <div class="row">
+            <!-- Responsive Section Start -->
+            <div class="text-center">
+                <h3 class="border-primary"><span class="heading_border bg-primary">Login</span></h3>
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" >
+                <div class="box">
+{#                    <div class="box-icon">#}
+{#                        <i class="livicon icon" data-name="desktop" data-size="55" data-loop="true" data-c="#01bc8c" data-hc="#01bc8c"></i>#}
+{#                    </div>#}
+
+
+{#                    <div class="info">#}
+                <div class="row">
+                     <div class="form-group col-md-8 col-sm-12 col-md-offset-2">
+                                            <input class="form-control" name="email" placeholder="Email" id="email">
+                                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-8 col-sm-12 col-md-offset-2">
+                                            <input class="form-control " name="password" placeholder="Password" type="password" id="password">
+                                        </div>
+                </div>
+
+
+{#                    <div class="center-block">#}
+{#                        <div class="center-block">#}
+                            <button class="btn btn-success center-block">Login</button>
+{#                        </div>#}
+{#                    </div>#}
+{#                        <h3 class="success text-center">Responsive</h3>#}
+{#                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>#}
+{#                        <div class="text-right primary"><a href="#">Read more</a>#}
+{#                        </div>#}
+
+
+
+{#                    </div>#}
+                </div>
+            </div>
+
+        </div>
+        <!-- //Services Section End -->
+    </div>
+
+{% endblock %}
+
+
+{% block script %}
+   <!-- page level js starts-->
+    <script type="text/javascript" src="{% static 'js/jquery.circliful.js' %}"></script>
+    <script type="text/javascript" src="{% static 'vendors/owl-carousel/owl.carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+    <!--page level js ends-->
+{% endblock %}
